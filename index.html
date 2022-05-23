@@ -9,28 +9,36 @@
     
     <style>
     
-
+       body{
+           display: flex;
+           flex-wrap: wrap;
+           overflow-x: hidden;
+       }
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         } 
      
-        main{
+        .main{
             width: 100vw;
-            height: 100vh;
             position: relative;
            
         }
-
-        header{
-            padding-top: 7vh;
+      .head{
+            
             display: flex;
-            height: 6vh;
+            height: 8vh;
             width: 100vw;
             background-color: black;
             align-items: center;
             font-size: 3vh;
-        }       
+            flex-wrap: wrap;
+            position: fixed;
+            z-index: 1;
+            border-bottom: white solid 1px;;
+      }
+         
 
        .list1 li{
            display: inline-block;
@@ -44,13 +52,12 @@
            height: 4vh;
        }
        .bigimage{
-           height: 80vh;
-           margin-top: 5vh;
+           height: 135vh;
            position: relative;
            text-align: center;
        }
        .image1{
-           width: 95%;
+           width: 100%;
            height: 100%;
        }
 
@@ -58,11 +65,12 @@
            display: flex;
            background-color: black;
            text-align: center;
-           height: 6vh;
+           height: 8vh;
            font-size: 3vh;
-           margin-top: 5vh;
+           border-top: white solid 1px;
            align-items: center;
            width: 100%;
+           overflow: hidden;
        }
      
        .list2{
@@ -71,43 +79,120 @@
        .list2 li{
            color: white;
            display: inline-block;
-           margin-right: 6vh;
+           margin-right: 10vh;
        }
+       .inner2 p,h1{
+           display: flex;
+          flex-wrap: wrap;
+          padding: 10px;
+
+       }
+       .car{
+           display: flex;
+           justify-content: space-between;
+           padding-right: 13px;
+       }
+      .car1{
+        margin: 4vh 1vw;
+        height: 43vh;
+        width: 23vw;
+        background-color: black;
+        border: 1px solid white;
+        overflow: hidden;
+        
+        
+      }
+      .supercars{
+          width: 100%;
+          height: 100%;
+      } 
+      .foot{
+          background-color: black;
+          width: 100%;
+          height: 15vh;
+          color: white;
+          text-align: center;
+          padding-top: 5vh;
+      }
+      .supercars:hover{
+        transform: scale(1.5);
+        transition: transform 1s ease;
+      }
+      li:hover{
+        transform: scale(1.2);
+        transition: transform 1s ease;
+      }
+      .car1:hover{
+          border-radius: 50px;
+          transition: transform 1.5s ease;
+      }
+      .icon{
+          height:10vh;
+          padding-left: 5vw;
+      }
         
     </style>
 </head>
 <body>
-   <div class="main">
+    
     <header>
         <nav>
+            <div class="head">
+                <img class="icon" src="supercar.png">
+        
                 <ul class="list1">
-                     <li>HOME</li>
+                    <a href="#homeimage"> <li>HOME</li></a>
                      <li>ABOUT</li>
                     <li>CONTACT</li>
                     <li><input type="text" placeholder="Search.."></li>
+                    
                 </ul>
+                
+         </div>
         </nav>
     </header>
     
-
+    
     <main>
-      <div class="bigimage">
-          <img class="image1" src="best-supercar-by-year-1400x826.png" alt="car-image">
+    <div class="main">
+      <div id="homeimage" class="bigimage">
+          <img class="image1" src="2014_Ferrari_458Speciale-1-1024.jpg" alt="car-image">
 
       </div>
 
       <div class="tab">
         <ul class="list2">
-            <li>Brand Logos</li>
-            <li>Popular Brands</li>
-            <li>Best Models</li>
-            <li>Suprer Cars</li>
-            <li>Company Websites</li>  
+            <a href="brandlogo.html"><li>BRAND LOGOS</li></a>
+            <li>POPULAR BRANDS</li>
+            <li>BEST MODELS</li>
+            <li>SUPER CARS</li>
+            <li>COMPANY WEBSITE</li>  
         </ul>
-    </div>
+      </div>
+
+         <div class="inner2">
+            <h1><strong>The World's Best Supercars from Every Year & Era</strong></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eligendi at vel quis hic nam, optio soluta, nisi illum iusto possimus? Quis nesciunt accusantium qfacere iusto ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit a, nulla ut vel itaque, odio numquam, laborum cupiditate rem inlibero cum! </p>
+        </div>
+        <div class="car">
+            <div class="car1"><img class="supercars" src="2013_lamborghini_aventador_lp700_4-370x247 (1).jpg" alt="carpic"></im></div>
+            <div class="car1"><img class="supercars"  src="porsche-911-gt2-rs-4096x2304-2018-4k-10906-370x247.jpg" alt="carpic"></div>
+            <div class="car1"><img  class="supercars" src="92998-370x247.jpg" alt="carpic"></div>
+            <div class="car1"><img class="supercars" src="2020-Ferrari-SF90-Stradale-016-1600-1-370x247.jpg" alt="carpic"></div>
+
+            
+        </div> 
+
+        <footer>
+            <div class="foot">
+                &copy 2022 Supercars<br>  
+                supercars@gmail.com
         
+            </div> 
+        </footer> 
     </main>
 
-</div> 
+
+
 </body>
 </html>
