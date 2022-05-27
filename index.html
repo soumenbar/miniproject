@@ -9,34 +9,35 @@
     
     <style>
     
-       body{
-           display: flex;
-           flex-wrap: wrap;
-           overflow-x: hidden;
-       }
+      /* body{
+         
+           
+       }*/
+     
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         } 
      
-        .main{
-            width: 100vw;
-            position: relative;
-           
-        }
-      .head{
-            
-            display: flex;
+      header,nav{
+            width: 100%;
             height: 10vh;
-            width: 100vw;
             background-color: black;
             align-items: center;
             font-size: 3vh;
-            flex-wrap: wrap;
             position: fixed;
             z-index: 1;
             border-bottom: white solid 1px;;
+      }
+      .forlogo{
+          position: absolute;
+          height: 100%;
+      }
+
+      #logo{
+          height: 10vh;
+          padding-left: 5vw;
       }
          
 
@@ -45,11 +46,12 @@
            color: white;
            margin-left: 4vw;
        }
-       input{
-           display: inline-block;
-           margin-left: 10vw;
-           width: 20vw;
-           height: 4vh;
+       .search{
+            margin-left: 50vw;
+            width: 25vw;
+            height: 4vh;
+            top: 3vh;
+            position: absolute;
        }
        .bigimage{
            height: 135vh;
@@ -60,21 +62,28 @@
            width: 100%;
            height: 100%;
        }
-
+        main{
+            padding-top: 10vh;
+        }
        .tab{
-           display: flex;
-           background-color: black;
-           text-align: center;
-           height: 8vh;
-           font-size: 3vh;
-           border-top: white solid 1px;
-           align-items: center;
-           width: 100%;
-           overflow: hidden;
+            background-color: black;
+            height: 8vh;
+            font-size: 3vh;
+            border-top: white solid 1px;
+       }
+       .list1{
+        display: inline-block;
+        position: absolute;
+        top: 3vh;
+        left: 10vw;
        }
      
        .list2{
-           margin-left: 8vh;
+        top: 2vh;
+        margin-left: 8vh;
+        position: relative;
+
+
        }
        .list2 li{
            color: white;
@@ -126,10 +135,7 @@
           border-radius: 50px;
           transition: transform 1.5s ease;
       }
-      .icon{
-          height:10vh;
-          padding-left: 5vw;
-      }
+     
         
     </style>
 </head>
@@ -137,18 +143,16 @@
     
     <header>
         <nav>
-            <div class="head">
-                <a href="https://poki.com/en/g/super-star-car" target="_blank"><img class="icon" src="supercar.png"></a>
+                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="supercar.png" id="logo"></a>
         
                 <ul class="list1">
                     <a href="#homeimage"> <li>HOME</li></a>
                      <li>ABOUT</li>
                     <li>CONTACT</li>
-                    <li><input type="text" placeholder="Search.."></li>
+                    <li></li>
                     
                 </ul>
-                
-         </div>
+                <input class="search" type="text" placeholder="Search..">
         </nav>
     </header>
     
@@ -160,6 +164,8 @@
 
       </div>
 
+      
+
       <div class="tab">
         <ul class="list2">
             <a href="brandlogo.html"><li>BRAND LOGOS</li></a>
@@ -170,10 +176,14 @@
         </ul>
       </div>
 
+      
+
          <div class="inner2">
             <h1><strong>The World's Best Supercars from Every Year & Era</strong></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eligendi at vel quis hic nam, optio soluta, nisi illum iusto possimus? Quis nesciunt accusantium qfacere iusto ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit a, nulla ut vel itaque, odio numquam, laborum cupiditate rem inlibero cum! </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisis hic nam, optio s Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ipsam, at obcaecati, nostrum ut delectus ratione molestiae unde tempore quos fugit veritatis aut porro quibusdam animi ea consectetur sed distinctio magni alias accusamus optio eum magnam quis. Voluptatum doloremque temporibus eum ullam nostrum consequatur voluptatibus facilis facere enim, corrupti nemo soluta, fugit nulla dolorem cupiditate quod fuga labore, dicta consectetur consequuntur provident voluptas placeat asperiores. Nulla quae officia placeat minima. Ad ipsa, distinctio sint animi praesentium suscipit temporibus beatae! Perferendis sint amet, obcaecati cupiditate, repudiandae veritatis, magnam quae quisquam animi eligendi reiciendis? Aperiam quod aspernatur eaque ducimus dolor ullam cum. 
+            </p>
         </div>
+        
         <div class="car">
             <div class="car1"><img class="supercars" src="2013_lamborghini_aventador_lp700_4-370x247 (1).jpg" alt="carpic"></im></div>
             <div class="car1"><img class="supercars"  src="porsche-911-gt2-rs-4096x2304-2018-4k-10906-370x247.jpg" alt="carpic"></div>
@@ -181,15 +191,15 @@
             <div class="car1"><img class="supercars" src="2020-Ferrari-SF90-Stradale-016-1600-1-370x247.jpg" alt="carpic"></div>
 
             
-        </div> 
-
+        </div>  
+                    
         <footer>
             <div class="foot">
                 &copy 2022 Supercars<br>  
                 supercars@gmail.com
         
             </div> 
-        </footer> 
+        </footer>  
     </main>
 
 
