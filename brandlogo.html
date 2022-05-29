@@ -6,57 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGOS</title>
 
-<style>
+ <link rel="stylesheet" href="header&footer.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        } 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+main{
+    padding-top: 10vh;
+}
 
-        .head{
-            
-            display: flex;
-            height: 8vh;
-            width: 100vw;
-            background-color: black;
-            align-items: center;
-            font-size: 3vh;
-            flex-wrap: wrap;
-            position: fixed;
-            z-index: 1;
-      }
-         
+.logo{
+   
+    height: 120px;
+    width: 135px;
+    /*background-color: black;  */
+    margin: 2em;
+    text-align: center;
+}
 
-       .list1 li{
-           display: inline-block;
-           color: white;
-           margin-left: 4vw;
-       }
-       input{
-           display: inline-block;
-           margin-left: 10vw;
-           width: 20vw;
-           height: 4vh;
-       }
-</style>
+.logo-main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.logo span{
+    font-size: 150%;
+    width: 100%;
+    font-weight: bold;
+}
+
+.logo-heading{
+    background-color: #ced3a3;
+    position: relative;
+    position: sticky;
+    top: 9.9vh;
+    padding: 1vh 0 0 8vw;
+    font-size: 162%;
+    height: 8vh;
+}
+
+.logo-main img{
+    width: 80%;
+}
+
+
+@media screen and (max-width: 550px) {
+  body {
+    background-color: rgb(199, 226, 199);
+  }
+
+ .list1{
+     display: flex;
+     position: static;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+ }
+ .logo-heading{
+    top: 20vw;
+    height: 9vmax;
+    font-size: 3vmax;
+ }
+ header,nav{
+     height: 20vw;
+ }
+ .list1 li{
+    margin-left:0vw;
+    padding: 1.3vw;
+    font-size: 3vw;
+ }
+ .forlogo,.search{
+     display: none;
+ }
+}
+ </style>
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="head">
+                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="supercar.png" id="logo"></a>
         
                 <ul class="list1">
-                    <a href="index.html"> <li>HOME</li></a>
-                     <li>ABOUT</li>
-                    <li>CONTACT</li>
-                    <li><input type="text" placeholder="Search.."></li>
+                    <li> <a href="index.html"> HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="contactUs.html">CONTACT</a></li>
+                    
                 </ul>
-        
-         </div>
+                <input class="search" type="text" placeholder="Search..">
         </nav>
     </header>
+    <div class="logo-heading" ><h3>Popular Brand Logos</h3></div>
+    <main class="logo-main">
+        
+        <div class="logo"><span>Acura</span><img src="acura-2_180x130.webp" alt="Acura logo"></div>
+        <div class="logo"><span>Alfa-Romeo</span><img src="logos/alfa-romeo-1_180x130.webp " alt="Alfa-Romeo logo"></div>
+        <div class="logo"><span>Aston-Martin</span><img src="logos/aston-martin_180x130.webp " alt="aston-martin logo"></div>
+        <div class="logo"><span>Audi</span><img src="logos/Audi-5-1-1-1_180x130.webp " alt="Audi logo"></div>
+        <div class="logo"><span>Bentley</span><img src="logos/bentley_180x130.webp " alt="bentley logo"></div>
+        <div class="logo"><span>BMW</span><img src="logos/bmw_180x130.webp " alt="bmw logo"></div>
+        <div class="logo"><span>Bugatti</span><img src="logos/bugatti-5-1_180x130.webp " alt="bugatti logo"></div>
+        <div class="logo"><span>Buick</span><img src=" logos/buick_180x130.webp" alt="buick logo"></div>
+        <div class="logo"><span>Cadillac</span><img src="logos/cadillac_180x130.webp " alt="cadillac logo"></div>
+        <div class="logo"><span>Chrysler</span><img src="logos/chrysler-logo-1-1_180x130.webp " alt="chrysler logo"></div>
+        <div class="logo"><span>Citroen</span><img src="logos/citroen-12-1-1_180x130.webp " alt="citroen logo"></div>
+        <div class="logo"><span>Dodge</span><img src="logos/dodge_180x130.webp " alt="dodge logo"></div>
+        <div class="logo"><span>Ferrari</span><img src=" logos/Ferrari-6-2-1-1-1-1_180x130.webp" alt="Ferrari logo"></div>
+        <div class="logo"><span>Fiat</span><img src="logos/fiat-1-1_180x130.webp" alt="fiat logo"></div>
+        <div class="logo"><span>Ford</span><img src="logos/ford-21-1-1-1-1-1-1-1_180x130.webp" alt="ford logo"></div>
+        <div class="logo"><span>Honda</span><img src="logos/honda-21-1-1_180x130.webp" alt="honda logo"></div>
+        <div class="logo"><span>Hyundai</span><img src="logos/Hyundai_logo_180x130.webp" alt="Hyundai logo"></div>
+        <div class="logo"><span>Jaguar</span><img src="logos/Jaguar-1-1_180x130.webp" alt="Jaguar logo"></div>
+        <div class="logo"><span>Jeep</span><img src="logos/jeep_180x130.webp" alt="jeep logo"></div>
+        <div class="logo"><span>kia</span><img src="logos/kia-2_180x130.webp" alt="kia logo"></div>
+        <div class="logo"><span>Lamborghini</span><img src="logos/lamborghini-2-1_180x130.webp" alt="lamborghini logo"></div>
+        <div class="logo"><span>Lancia</span><img src="logos/Lancia_180x130.webp" alt="Lancia logo"></div>
+        <div class="logo"><span>Land Rover</span><img src="logos/Land_Rover-2_180x130.webp" alt="Land_Rover logo"></div>
+        <div class="logo"><span></span><img src="logos/lexus-6-1-1-1_180x130.webp" alt="lexus logo"></div>
+        <div class="logo"><span>Lexus</span><img src="logos/lotus-1-1_180x130.webp" alt="logo"></div>
+        <div class="logo"><span>Mclaren</span><img src="logos/mclaren_180x130.webp" alt="mclaren logo"></div>
+        <div class="logo"><span>Mercedes</span><img src="logos/Mercedes-2-1-1-1-1-1_180x130.webp" alt="Mercedes logo"></div>
+        <div class="logo"><span>Mitsubishi</span><img src="logos/mitsubishi-2-1_180x130.webp" alt="mitsubishi logo"></div>
+        <div class="logo"><span>Nissan</span><img src="logos/nissan-8-1-1-1-1-1_180x130.webp" alt="nissan logo"></div>
+        <div class="logo"><span>Porsche</span><img src="logos/Porsche-4-1-1-1-1-1-1-1_180x130.webp" alt="Porsche logo"></div>
+        <div class="logo"><span>Renault</span><img src="logos/renault_180x130.webp" alt="renault logo"></div>
+        <div class="logo"><span>Rolls Royce</span><img src="logos/Rolls_Royce-1_180x130.webp" alt="Rolls_Royce logo"></div>
+        <div class="logo"><span>Skoda</span><img src="logos/skoda_180x130.webp" alt=" skoda logo"></div>
+        <div class="logo"><span>Suzuki</span><img src="logos/Suzuki-1-1_180x130.webp" alt="Suzuki logo"></div>
+        <div class="logo"><span>Tesla</span><img src="logos/tesla_180x130.webp" alt="tesla logo"></div>
+        <div class="logo"><span>Toyota</span><img src="logos/toyota-9-1-1-1-1_180x130.webp" alt="toyota logo"></div>
+        <div class="logo"><span>Volvo</span><img src="logos/volvo-2-1-1_180x130.webp" alt="volvo logo"></div>
+        <div class="logo"><span>Volkswagen</span><img src="logos/vw_logo-5-1-1-1-1_180x130.webp" alt="Volkswagen logo"></div>
+       
+        
+
+    </main>
+
+    <footer>
+            &copy 2022 SuperCar All Rights Reserved <br><br>
+           
+
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-facebook"></a>
+    </footer>  
+ 
+
     
 </body>
 </html>
