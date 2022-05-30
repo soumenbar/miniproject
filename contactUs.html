@@ -18,14 +18,115 @@
           main{
                 padding-top: 10vh;
             }
+            .forimage{
+                position: relative;
+            }
+            .h1{
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
+                font-size: 3vmax;
+            }
+            img{
+                width: 100%;
+                
+            }
+            .heading{
+                color: #0c5ef5;
+            }
 
+            .details{
+                display: inline-block;
+                width: 50%;
+                text-align: center;         
+               }
+             .feedback{
+                 display: inline-block;
+                 width: 45%;
+                 
+             }  
+             .main{
+                 background-color: rgb(181, 223, 240);
+                 padding-bottom: 5vh;
+                 margin-top: -1VW;
+                 padding-top: 2VW;
+             }
+             input,textarea{
+                 border: none;
+                 border-bottom: 1px solid black;
+             }
+             .button{
+                 border: none;
+                 height: 4vh;
+                 width: 8vmax;
+                 background-color: rgb(176, 214, 240);
+                 border-radius: 5px;
+             }
+           
+
+             fieldset{
+                 padding: 1vw;
+                 font-weight: bold;
+                 background-color: white;
+                 border-radius: 6px;
+             }
+
+             @media screen and (max-width: 550px) {
+  
+
+  .list1{
+      display: flex;
+      position: static;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+ 
+  header,nav{
+      height: 22vw;
+  }
+  .list1 li{
+     margin-left:0vw;
+     padding: 1.3vw;
+     font-size: 3vw;
+  }
+  .forlogo,.search{
+      display: none;
+  }
+
+  .main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      margin-top: -1vw;
+      padding-top: 4vw;
+  }
+  .details{
+      margin-bottom: 15vw;
+  }
+  .feedback{
+      margin-bottom: 5vw;
+  }
+  form{
+      margin-left: -4vw;
+  }
+  h3{
+      margin-bottom: 4vw;
+  }
+ 
+ }
+             
 
     </style>      
 </head>
 <body>
     <header>
         <nav>
-                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="supercar.png" id="logo"></a>
+                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="logos/supercar.png" id="logo"></a>
         
                 <ul class="list1">
                     <li> <a href="index.html"> HOME</a></li>
@@ -36,7 +137,43 @@
                 <input class="search" type="text" placeholder="Search..">
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="forimage">
+            <h1 class="h1">CONTACT US</h1>
+            <img src="logos/istockphoto-1256603011-612x612.jpg">
+        </div>
+        
+
+    <div class="main">
+        <div class="details">
+            
+            <p class="heading">Address</p>
+            <p>Howrah,westbengal</p>
+            <p>711302</p>
+            <br>
+            <p class="heading">Phone</p>
+            <p>1800-2589-2589</p>
+            <br>
+            <p class="heading">Email</p>
+            <p>supercar@email.com</p>
+
+        </div> 
+
+        <div class="feedback">
+            <h3>Welcome Your Suggestions!</h3>
+            <form>
+                <fieldset>
+                    <legend>Send Message</legend>
+                    Name<br> <input type="text"><br><br>
+                    Email<br><input type="email"><br><br>
+                    Type your message..<br>
+                    <textarea rows="2" cols="20vw"></textarea><br>
+                    <input type="submit" class="button" value="SEND">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    </main>
 
     <footer>
         &copy 2022 SuperCar All Rights Reserved <br><br>

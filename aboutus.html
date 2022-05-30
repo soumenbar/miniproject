@@ -17,7 +17,47 @@
 
           main{
                 padding-top: 10vh;
+                background-color: rgb(192, 227, 238);
+                
             }
+            .about{
+                text-align: center;  
+                padding: 20%;
+            }
+            .about h1{
+                margin-bottom: 8vw;
+            }
+            .about p{
+                text-align: justify;
+                font-size: 1.5em;
+                margin-bottom: 10vw;
+            }
+
+
+            @media screen and (max-width: 550px) {
+  
+
+ .list1{
+     display: flex;
+     position: static;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+ }
+
+ header,nav{
+     height: 22vw;
+ }
+ .list1 li{
+    margin-left:0vw;
+    padding: 1.3vw;
+    font-size: 3vw;
+ }
+ .forlogo,.search{
+     display: none;
+ }
+
+}
 
 
     </style>      
@@ -25,7 +65,7 @@
 <body>
     <header>
         <nav>
-                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="supercar.png" id="logo"></a>
+                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="logos/supercar.png" id="logo"></a>
         
                 <ul class="list1">
                     <li> <a href="index.html"> HOME</a></li>
@@ -36,7 +76,33 @@
                 <input class="search" type="text" placeholder="Search..">
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="about">
+            <h1>OUR MISSION</h1>
+            <P>SuperCar.com offers daily news and reviews about all sorts of vehicles, but focusing essentially on cars and motorcycles available for sale in the North American market.
+
+                Our mission is to inform our readers of the latest development in the industry, but more importantly to be neutral consumer advocates. Comparing vehicle features to competing products and putting them in perspective from an expert point of view.
+                
+                We hope our articles are as engaging as educative, and that every reader will be able to learn and takeaway valuable pieces of information.
+                
+                SuperCar.com is entirely financed by advertising, but we do not maintain any direct relationship with the manufacturers other than for getting access to the products.
+                
+                We maintain ethical editorial guidelines to keep all the information safe and financially conservative for our readers.</P>
+
+                <h1>WHO ARE WE</h1>
+
+                <p>SuperCar.com first came online in 2020 and has been online ever since.
+
+                    SuperCar leverage a team of 10 contributors with deep automotive knowledge and a passion for journalism. Our experts are hard at work to bring you the latest news and reviews without bias nor compromises.
+                    
+                    Our staff is only composed of full-time writers with a passion and expertise in their respective domains, ranging from passenger cars, heavy-duty trucks or aftermarket accessories.
+                    
+                    SuperCar is mainly focusing on cars, but we in future also cover other vehicles like trucks, motorcycles, boats or even airplanes. We also offer lighter topics like our famous car games.
+                </p>
+
+        </div>
+
+    </main>
 
     <footer>
         &copy 2022 SuperCar All Rights Reserved <br><br>

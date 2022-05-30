@@ -45,14 +45,9 @@
             padding-left: 7vw;
        }
        
-     
        .list2{
-
         top: 2vh;
-        
         position: relative;
-
-
        }
        .list2 li{
            color: white;
@@ -61,24 +56,21 @@
            padding-right:2vw;
        }
        .inner2 p,h1{
-           display: flex;
-          flex-wrap: wrap;
           padding: 10px;
-
+       }
+       .inner2 h1{
+           font-size:7vw;
        }
        .car{
            display: flex;
            justify-content: space-between;
        }
       .car1{
-        margin: 4vh 1vw;
+        margin: 2vh 1vw;
         height: 43vh;
-        width: 23vw;
         background-color: black;
         border: 1px solid white;
         overflow: hidden;
-        
-        
       }
       .supercars{
           width: 100%;
@@ -94,6 +86,42 @@
           border-radius: 50px;
           transition: transform 1.5s ease;
       }
+
+      @media screen and (max-width: 550px) {
+
+ .list1{
+     display: flex;
+     position: static;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+ }
+ .logo-heading{
+    top: 20vw;
+    height: 9vmax;
+    font-size: 3vmax;
+ }
+ header,nav{
+     height: 22vw;
+ }
+ .list1 li{
+    margin-left:0vw;
+    padding: 1.3vw;
+    font-size: 3vw;
+ }
+ .forlogo,.search{
+     display: none;
+ }
+ .car{
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+ .car1{
+     width: 80%;
+     height: 35vh;
+ }
+}
      
         
     </style>
@@ -102,7 +130,7 @@
     
     <header>
         <nav>
-                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="supercar.png" id="logo"></a>
+                <a class="forlogo" href="https://poki.com/en/g/super-star-car" target="_blank"><img src="logos/supercar.png" id="logo"></a>
         
                 <ul class="list1">
 
@@ -119,7 +147,7 @@
     <main>
     <div class="main">
       <div id="homeimage" class="bigimage">
-          <img class="image1" src="2014_Ferrari_458Speciale-1-1024.jpg" alt="car-image">
+          <img class="image1" src="logos/2014_Ferrari_458Speciale-1-1024.jpg" alt="car-image">
 
       </div>
 
@@ -139,15 +167,22 @@
 
          <div class="inner2">
             <h1><strong>The World's Best Supercars from Every Year & Era</strong></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisis hic nam, optio s Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ipsam, at obcaecati, nostrum ut delectus ratione molestiae unde tempore quos fugit veritatis aut porro quibusdam animi ea consectetur sed distinctio magni alias accusamus optio eum magnam quis. Voluptatum doloremque temporibus eum ullam nostrum consequatur voluptatibus facilis facere enim, corrupti nemo soluta, fugit nulla dolorem cupiditate quod fuga labore, dicta consectetur consequuntur provident voluptas placeat asperiores. Nulla quae officia placeat minima. Ad ipsa, distinctio sint animi praesentium suscipit temporibus beatae! Perferendis sint amet, obcaecati cupiditate, repudiandae veritatis, magnam quae quisquam animi eligendi reiciendis? Aperiam quod aspernatur eaque ducimus dolor ullam cum. 
+            <p>Since its inception, Supercars has offered complete coverage of international sports cars, from classic cars, unique car concepts, hypercars and to everything in between. The mission is to deliver this automotive information in a concise, organized and engaging manner at no cost to users.
+
+                We couldn’t care less what lap time cars can do at the Nurburgring, or how much they weighs, or whether there are those who will typecast its driver. We want cars that are joyous to drive, purely for the sake of driving. We want escapism that if were brutally honest, probably won’t be possible much longer. For us, it is about an enjoyment, excitement and fascination with cars that deliver unique and precious driving experiences.
+                
+                That is why this page is one of our favorites. We argue, we fight and we spend hours back and forth trying to pick the best of the best supercars, exotics and performance cars. Every year we round up our favorites, the cars that impressed us the most, the cars that make it onto our best supercars annual lists.
+                
+                Then, at the end of each decade we look back and we curate the best cars of the decade. Forget hours, that exercise takes weeks and if you think the arguing is bad when we discuss the annual best car lists, the decade ones end up in all our wars. That's what makes it so much fun. Please enjoy our curated lists of the best cars on the planet, organized by year and by decade.
+                
             </p>
         </div>
         
         <div class="car">
-            <div class="car1"><img class="supercars" src="2013_lamborghini_aventador_lp700_4-370x247 (1).jpg" alt="carpic"></im></div>
-            <div class="car1"><img class="supercars"  src="porsche-911-gt2-rs-4096x2304-2018-4k-10906-370x247.jpg" alt="carpic"></div>
-            <div class="car1"><img  class="supercars" src="92998-370x247.jpg" alt="carpic"></div>
-            <div class="car1"><img class="supercars" src="2020-Ferrari-SF90-Stradale-016-1600-1-370x247.jpg" alt="carpic"></div>
+            <div class="car1"><img class="supercars" src="logos/2013_lamborghini_aventador_lp700_4-370x247.jpg" alt="carpic"></im></div>
+            <div class="car1"><img class="supercars"  src="logos/porsche-911-gt2-rs-4096x2304-2018-4k-10906-370x247.jpg" alt="carpic"></div>
+            <div class="car1"><img  class="supercars" src="logos/92998-370x247.jpg" alt="carpic"></div>
+            <div class="car1"><img class="supercars" src="logos/2020-Ferrari-SF90-Stradale-016-1600-1-370x247.jpg" alt="carpic"></div>
 
             
         </div>  
